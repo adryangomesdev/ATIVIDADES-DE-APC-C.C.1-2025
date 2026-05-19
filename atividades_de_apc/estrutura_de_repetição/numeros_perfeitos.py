@@ -1,0 +1,9 @@
+n = int(input())
+
+for num in range(2, n):
+    soma = 0
+    for i in range(1, num):
+        if num % i == 0:
+            soma += i
+    if soma == num:
+        print(num)
